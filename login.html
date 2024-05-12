@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gokul Login & Register</title>
+
+     <!----- Favicon ----->
+
+     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+     <link rel="manifest" href="img/site.webmanifest">
+     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log-In</button>
+                <button type="button" class="toggle-btn"  onclick="register()">Register</button>
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="Username" required/>
+                <input type="email" class="input-field" placeholder="Email" required/>
+                <input type="password" class="input-field" placeholder="Enter Password" required/>
+                <input type="checkbox" class="check-box"><span class="declar">Remember Password</span>
+                <button type="submit" class="submit-btn">Log-In</button>
+            </form>
+
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="Username" required/>
+                <input type="number" class="input-field" placeholder="Mobile" required/>
+                <input type="email" class="input-field" placeholder="Email" required/>
+                <input type="password" class="input-field" placeholder="Enter Password" required/>
+                <input type="checkbox" class="check-box"><span class="declar">I agree to the terms & conditions.</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
